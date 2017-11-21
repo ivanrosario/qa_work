@@ -5,21 +5,21 @@ var options = {
     }
 };
 
-// function Visible(elem, name){
-//   webdriverio
-//     .remote(options).init().url('https://internet.frontier.com/').isVisible(elem).then(function(img){
-//       console.log( name+ ' was: ' + img);
-//     })
-//     .end()
-//     .catch(function(err) {
-//         console.log(err);
-//     });
+function Visible(elem, name){
+  webdriverio
+    .remote(options).init().url('https://internet.frontier.com/').isVisible(elem).then(function(img){
+      console.log( name+ ' was: ' + img);
+    })
+    .end()
+    .catch(function(err) {
+        console.log(err);
+    });
 
-// }
+}
 
-// Visible('.hero','hero');
-// Visible('.graphic', 'graphic');
-// Visible('.section--bg', 'section');
+Visible('.hero','hero');
+Visible('.graphic', 'graphic');
+Visible('.section--bg', 'section');
 
 
 webdriverio
